@@ -8,9 +8,9 @@ const TypingText = () => {
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
       strings: [
-        "Backend Developer .",
-        "Full Stack Developer .",
-        "Software Engineer .",
+        "Backend Developer.",
+        "Full-Stack Dev.",
+        "Software Engineer.",
 
       ],
       typeSpeed: 50,
