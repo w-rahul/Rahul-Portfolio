@@ -15,7 +15,7 @@ const TypingText = () => {
       ],
       typeSpeed: 50,
       backSpeed: 30,
-      loop: false,
+      loop: true,
     });
 
     return () => {
