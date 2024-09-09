@@ -40,7 +40,7 @@ export const ProjectsData = [
         tech: [],
       },{
         name: 'EchoInk',
-        desc: "ull-stack blog platform built with modern web technologies. The backend is deployed on Cloudflare Workers using Hono.js and Accelerator for database connection pooling, with Prisma as the ORM and PostgreSQL for the database. The frontend is developed using React and Vite, styled with Tailwind CSS. Zod is used for data validation across both backend and frontend, and Wrangler is utilized for managing Cloudflare Workers.",
+        desc: "Full-stack blog platform built with modern web technologies. The backend is deployed on Cloudflare Workers using Hono.js and Accelerator for database connection pooling, with Prisma as the ORM and PostgreSQL for the database. The frontend is developed using React and Vite, styled with Tailwind CSS. Zod is used for data validation across both backend and frontend, and Wrangler is utilized for managing Cloudflare Workers.",
         liveLink: 'https://rxhxul-blog-app.vercel.app/',
         githubLink: 'https://github.com/w-rahul/Blog-app.gitt',
         coverImg: '/Images/Blog.png',
