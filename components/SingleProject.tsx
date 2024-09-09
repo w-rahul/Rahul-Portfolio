@@ -76,12 +76,6 @@ import { FC } from 'react';
 import Link from 'next/link';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 
-const trimDescriptionToWords = (description: string, limit: number) => {
-  const words = description.split(' ');
-  const trimmedWords = words.slice(0, limit);
-  return trimmedWords.join(' ');
-};
-
 interface ProjectsProps {
   name: string
   coverImg: string 
