@@ -9,7 +9,7 @@ export const Landing = () =>{
                 <div className="text-3xl">
                     Hello, I am
                 </div>
-                <div className="text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600"> 
+                <div className="pb-2 text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600"> 
                     Rahul Gupta 
                 </div>
                 <div className="">
