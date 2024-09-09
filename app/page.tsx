@@ -17,9 +17,9 @@ export default function Home() {
       <div id="skills" className="h-screen">
       <SkillsSection />
       </div>
-      <div id="projects" >
-        <Projects />
-      </div>
+      <div id="projects" className="mt-0 sm:mt-28">
+              <Projects />
+       </div>
       <div id="contact" >
         <Contactme />
       </div>
