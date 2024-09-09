@@ -26,6 +26,7 @@ export const ProjectsData = [
       {
         name: 'Portfolio',
         desc: "The website you are currently on. A showcase of my full stack development skills with a focus on backend technologies.",
+        liveLink: 'https://rxhxul.vercel.app/',
         githubLink: 'https://github.com/w-rahul/Rahul-Portfolio.git',
         coverImg: '/Images/Portfolio.png',
         imgs: [],
