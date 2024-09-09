@@ -1,6 +1,8 @@
+import { Contactme } from "@/components/Contact"
 import { Landing } from "@/components/Landing"
 import { Navbar } from "@/components/Navbar"
 import { Projects } from "@/components/Project"
+import { SkillsSection } from "@/components/SkillSection"
 
 
 export default function Home() {
@@ -12,14 +14,14 @@ export default function Home() {
       <div id="home" className="h-screen">
         <Landing />
       </div>
-      <div id="projects" className="h-screen">
+      <div id="skills" className="h-screen">
+      <SkillsSection />
+      </div>
+      <div id="projects" >
         <Projects />
       </div>
-      <div id="skills" className="h-screen">
-        Skills
-      </div>
-      <div id="contact" className="h-screen">
-        Contact
+      <div id="contact" >
+        <Contactme />
       </div>
     </div>
   )

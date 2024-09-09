@@ -129,7 +129,7 @@ export const SingleProject: FC<ProjectsProps> = (project) => {
         <p className="text-[clamp(.75rem,1.5vw,.875rem)] line-clamp-2">
           {project.desc}
         </p>
-        <div className="flex gap-3 items-center mt-auto">
+        <div className="flex gap-3 justify-center mt-auto svg-white pt-2">
           {project.tech.map((proj) => (
             <Image src={proj} alt={proj} width={20} height={20} key={proj} />
           ))}
