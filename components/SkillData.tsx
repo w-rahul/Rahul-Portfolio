@@ -6,7 +6,7 @@ export interface SkillProp {
 
 export interface SkillGroup {
     heading : string
-    Skills : Skill[]
+    Skills : SkillProp[]
 }
 
 export const SkillGroups : SkillGroup[] = [
