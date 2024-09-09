@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rahul Gupta’s Portfolio
 
-## Getting Started
+Welcome to my portfolio repository! This project showcases my skills and various projects as a full stack developer, with a strong focus on backend development. Below, you’ll find an overview of my work and the technologies I use.
 
-First, run the development server:
+## Portfolio Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This portfolio includes a range of projects demonstrating my expertise in both frontend and backend technologies. Explore the projects to see my skills in action and how I approach different challenges.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Portfolio Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A brief about myself 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Projects
 
-## Learn More
+A brief overview of the project, including its purpose and key features. Describe how the project showcases your skills and the technologies used.
 
-To learn more about Next.js, take a look at the following resources:
+## Skills
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Languages:** JavaScript, TypeScript
+- **Frameworks:** React, Next.js
+- **Backend:** Node.js, Express
+- **Databases:** PostgreSQL, MongoDB
+- **Tools & Technologies:** Docker, Git, Postman, Prisma, Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
+Feel free to reach out for collaborations or to discuss potential opportunities:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Email:** [rahulguptaji1019@gmail.com](mailto:rahulguptaji1019@gmail.com)
+- **GitHub:** [github.com/w-rahul](https://github.com/w-rahul)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Thank you for visiting my portfolio!
+
