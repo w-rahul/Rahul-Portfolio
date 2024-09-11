@@ -1,6 +1,6 @@
 # Rahul Gupta’s Portfolio
 
-Welcome to my portfolio repository! This project showcases my skills and various projects as a full stack developer, with a strong focus on backend development. Below, you’ll find an overview of my work and the technologies I use.
+Welcome to my portfolio repository! This project showcases my skills and various projects as a full-stack developer, with a strong focus on backend development. Below, you’ll find an overview of my work and the technologies I use.
 
 ## Portfolio Overview
 
