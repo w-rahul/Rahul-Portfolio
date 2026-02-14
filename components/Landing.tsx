@@ -13,7 +13,7 @@ export const Landing = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut", delay: 0.1 }}>
           <p
-            className="text-2xl sm:text-xl md:text-4xl text-neutral-400 mb-4"
+            className="text-2xl sm:text-xl md:text-4xl tracking-tight text-neutral-400 mb-4"
             style={{ fontFamily: "Poppins" }}>
             Hey there 👋
           </p>
@@ -26,6 +26,9 @@ export const Landing = () => {
           className="text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600"
           style={{ fontFamily: "Poppins" }}>
           I&apos;m Rahul
+          <p className="text-lg text-neutral-500  mt-2" style={{ fontFamily: "Poppins" }}>
+            Software Developer
+          </p>
         </motion.h2>
         <div className="flex justify-between items-center gap-6 md:gap-8">
           <a

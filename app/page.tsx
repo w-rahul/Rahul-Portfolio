@@ -8,7 +8,7 @@ import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div className="text-white w-full min-h-screen bg-black ">
+    <div className="text-white w-full min-h-screen">
       <div>
         <Header />
       </div>
@@ -21,10 +21,10 @@ export default function Home() {
       <div id="skills" className="h-screen">
         <SkillsSection />
       </div>
-      <div className="mt-20 md:mt-32">
+      <div>
         <About />
       </div>
-      <div id="projects" className="mt-28 sm:mt-0">
+      <div id="projects">
         <Projects />
       </div>
       <div id="contact">

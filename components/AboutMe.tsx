@@ -4,7 +4,7 @@ import ShinyText from "./ShinyText";
 
 export const About = () => {
   return (
-    <div className="p-4 md:p-12 mt-72 md:mt-12 mb-16 md:mb-20">
+    <div className="p-4 md:p-12 mt-72 md:mt-0 mb-16 md:mb-20">
       <div className="bg-neutral-800 shadow-2xl w-44 md:w-56 mx-auto rounded-xl mb-12 md:mb-16">
         <div
           className={`bg-clip-text text-transparent text-4xl md:text-5xl font-extrabold py-2 md:py-3 text-center text-black`}

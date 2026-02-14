@@ -34,7 +34,7 @@ export const Projects = () => {
             <ShinyText text="Projects" disabled={false} speed={2} />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-10 container mx-auto px-4 md:px-8 py-8 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-10 md:gap-6 container mx-auto px-4 md:px-20 py-8 md:py-8">
           {ProjectsData.map((project) => (
             <SingleProject {...project} key={project.name} />
           ))}
