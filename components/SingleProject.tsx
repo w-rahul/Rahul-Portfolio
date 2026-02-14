@@ -91,7 +91,7 @@ export const SingleProject: FC<ProjectsProps> = (project) => {
       key={project.name}
       className="flex flex-col gap-4 border-2 border-dotted rounded-lg dark:text-white  bg-neutral-100 dark:bg-black border-white transition-colors duration-150  p-2 md:p-3 max-w-sm h-auto" 
     >
-      <div className="relative flex overflow-hidden rounded-lg h-80"> 
+      <div className="relative flex overflow-hidden rounded-lg h-40 md:h-44"> 
         <Image
           src={project.coverImg}
           alt={project.coverImg}
