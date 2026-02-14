@@ -1,18 +1,3 @@
-
-// import Image from 'next/image';
-// import GatherHub from "./Images/Gatherhub.png"
-
-// export const ProjectData : ProjectDetails[] = [
-//     {
-//         title : "GatherHub",
-//         description : "Something about Gatherhub",
-//         image : GatherHub,
-//         icons : [GatherHub,GatherHub],
-//     }
-// ]
-
-// console.log(ProjectData);
-
 export const ProjectsData = [
     {
         name: 'Gatherhub',

@@ -1,93 +1,31 @@
-// import { GithubIcon, MailIcon } from "lucide-react"
+"use client";
 
-// export const Contactme = ()=>{
-//     return <div className="flex flex-col justify-center">
-//         <div className="text-center border rounded-full bg-zinc-950">
-//             <div className="flex font-bold text-xl">
-//                 <div className="p-10 w-1/2 ">
-//                 <p> I do check emails regulary</p>
-//                     rahulguptaji1019@gmail.com
-//                     <span> <MailIcon /></span>
-//                 </div>
-//                 <div className="p-10 w-1/2 ">
-//                 <p>The place which has all my work</p>
-//                     github.com/w-rahul
-//                     <span> <GithubIcon /> </span>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// }
+import ShinyText from "./ShinyText";
 
-// import { GithubIcon, MailIcon } from "lucide-react"
-// import Link from 'next/link'
-
-// export const Contactme = () => {
-//   return <div className=" flex flex-col justify-end">
-//       <div className="text-center border rounded-full bg-zinc-950 m-4">
-//         <div className="flex font-bold text-xl">
-//           <div className="p-10 w-1/2 flex flex-col items-center">
-//             <Link
-//             target="_blank"
-//             href={"mailto:rahulguptaji1019@gmail.com"}>
-//                 <p>I do check emails regularly</p>
-//                 <span className="flex items-center space-x-2">
-//                   <MailIcon />
-//                   <span>rahulguptaji1019@gmail.com</span>
-//                 </span>
-//             </Link>
-//           </div>
-//           <div className="p-10 w-1/2 flex flex-col items-center">
-//             <Link 
-//             target="blank"
-//             href={"https://github.com/w-rahul"}>
-//               <p>The place which has all my work</p>
-//               <span className="flex items-center space-x-2">
-//                 <GithubIcon />
-//                 <span>github.com/w-rahul</span>
-//               </span>
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-// }
-
-import { GithubIcon, MailIcon } from "lucide-react";
-import Link from 'next/link';
-
-export const Contactme = () => {
+export const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  text-white py-8">
-      <div className="text-center border rounded-sm md:rounded-full bg-zinc-950 mx-4 p-4 md:p-6 lg:p-8">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-          <div className="flex flex-col items-center w-full md:w-1/2 p-4">
-            <Link
-              target="_blank"
-              href={"mailto:rahulguptaji1019@gmail.com"}
-              className="flex flex-col items-center text-center"
-            >
-              <p className="text-lg md:text-xl font-medium">I do check emails regularly</p>
-              <span className="flex items-center space-x-2 text-sm md:text-base">
-                <MailIcon />
-                <span>rahulguptaji1019@gmail.com</span>
-              </span>
-            </Link>
-          </div>
-          <div className="flex flex-col items-center w-full md:w-1/2 p-4">
-            <Link
-              target="_blank"
-              href={"https://github.com/w-rahul"}
-              className="flex flex-col items-center text-center"
-            >
-              <p className="text-lg md:text-xl font-medium">The place which has all my work</p>
-              <span className="flex items-center space-x-2 text-sm md:text-base">
-                <GithubIcon />
-                <span>github.com/w-rahul</span>
-              </span>
-            </Link>
-          </div>
+    <div className="p-10 md:p-20">
+      <div className="bg-neutral-800 shadow-2xl w-56 md:w-64 mx-auto rounded-xl mb-8 md:mb-14">
+        <div
+          className={`bg-clip-text text-transparent text-4xl md:text-5xl font-extrabold py-2.5 md:py-3 text-center text-black`}
+          style={{ fontFamily: "Poppins", fontWeight: "900" }}>
+          <ShinyText text="Contact" disabled={false} speed={2} />
         </div>
+      </div>
+
+      <div className="max-w-2xl mx-auto text-center space-y-2">
+        <p
+          className="text-neutral-400 text-sm md:text-base"
+          style={{ fontFamily: "Poppins" }}>
+          Reach me via email
+        </p>
+
+        <a
+          href="mailto:rahulguptaji1019@gmail.com"
+          className="inline-block text-neutral-200 hover:text-neutral-400 transition text-base md:text-lg font-medium"
+          style={{ fontFamily: "Poppins" }}>
+          rahulguptaji1019@gmail.com
+        </a>
       </div>
     </div>
   );

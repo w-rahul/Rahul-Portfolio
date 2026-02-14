@@ -1,27 +1,35 @@
-import { Contactme } from "@/components/Contact"
 import { Landing } from "@/components/Landing"
-import { Navbar } from "@/components/Navbar"
+import { Header } from "@/components/Navbar"
 import { Projects } from "@/components/Project"
 import { SkillsSection } from "@/components/SkillSection"
+import { WorkSection } from "@/components/WorkExperience"
+import { About } from "@/components/AboutMe"
+import { Contact } from "@/components/Contact"
 
 
 export default function Home() {
   return (
-    <div className="text-white w-full min-h-screen bg-black bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:40px_40px]">
+    <div className="text-white w-full min-h-screen bg-black ">
       <div>
-        <Navbar />
+        <Header />
       </div>
       <div id="home" className="h-screen">
         <Landing />
       </div>
+      <div> 
+        <WorkSection />
+      </div>
       <div id="skills" className="h-screen">
       <SkillsSection />
+      </div>
+      <div>
+        <About />
       </div>
       <div id="projects" className="mt-28 sm:mt-0">
               <Projects />
        </div>
       <div id="contact" >
-        <Contactme />
+        <Contact />
       </div>
     </div>
   )

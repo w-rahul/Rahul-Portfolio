@@ -89,7 +89,7 @@ export const SingleProject: FC<ProjectsProps> = (project) => {
   return (
     <div
       key={project.name}
-      className="flex flex-col gap-4 rounded-[0.875rem] dark:text-white shadow-[6px_6px_0px_1px_#000000a6] dark:shadow-[6px_6px_0px_1px_#ffffffa6] bg-neutral-100 dark:bg-black border-white transition-colors duration-150 border p-2 md:p-3 max-w-sm h-auto" 
+      className="flex flex-col gap-4 border-2 border-dotted rounded-lg dark:text-white  bg-neutral-100 dark:bg-black border-white transition-colors duration-150  p-2 md:p-3 max-w-sm h-auto" 
     >
       <div className="relative flex overflow-hidden rounded-lg h-80"> 
         <Image

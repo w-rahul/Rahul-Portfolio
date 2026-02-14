@@ -1,9 +1,12 @@
-import { SkillProp } from "./SkillData";
-import  Image from "next/image"
+import { SkillProp, iconMap } from "./SkillData";
 
-export const Skills = ({ name, logo }: SkillProp) => {
-  return <div className="m-1 flex items-center px-4 py-2 border rounded-lg  shadow-[0px_3px_1px_rgba(221,_221,_221,_1)]">
-      <Image src={logo} alt={name} width={36} height={36}  className="w-9 h-9 mr-2 svg-white" />
-      <p className="text-lg font-medium">{name}</p>
+export const Skills = ({ name }: SkillProp) => {
+  return (
+    <div className="m-1 flex items-center px-2.5 py-2 rounded-lg border-2 border-dotted border-white ">
+      <div className="w-6 h-6 mr-2 flex items-center justify-center text-2xl">
+        {iconMap[name]}
+      </div>
+      <p className="text-md font-medium">{name}</p>
     </div>
-}
+  );
+};
