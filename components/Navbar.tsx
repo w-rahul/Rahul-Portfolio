@@ -1,30 +1,54 @@
-import Link from 'next/link';
+"use client";
 
-export const Navbar = () => {
+import {
+  RiGithubFill,
+  RiLinkedinBoxFill,
+  RiTwitterXFill,
+  RiInstagramLine,
+} from "react-icons/ri";
+import { Home } from "lucide-react";
+
+export const Header = () => {
   return (
-    <nav className="absolute dark:text-white text-black z-50 flex justify-center w-full bg-transparent">
-      <ul className="dark:bg-black bg-white flex justify-center gap-4 sm:gap-10 items-center border rounded-full w-max p-5 sm:px-10 fixed left-1/2 -translate-x-1/2 top-5">
-        <li className="cursor-pointer group transition duration-300 text-sm md:text-base">
-          <Link href={"/#home"}> Home </Link>
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
-        </li>
-        <li className="cursor-pointer group transition duration-300 text-sm md:text-base">
-          <Link href={"/aboutme"}> About Me </Link>
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
-        </li>
-        <li className="cursor-pointer group transition duration-300 text-sm md:text-base">
-          <Link href={"/#skills"}> Skills </Link>
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
-        </li>
-        <li className="cursor-pointer group transition duration-300 text-sm md:text-base">
-          <Link href={"/#projects"}> Projects </Link>
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
-        </li>
-        <li className="cursor-pointer group transition duration-300 text-sm md:text-base">
-          <Link href={"/#contact"}> Contact Me </Link>
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
-        </li>
-      </ul>
-    </nav>
+    <div className="fixed top-12 left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-neutral-900/70 border border-neutral-800 rounded-lg px-6 md:py-4.5 py-4 flex items-center gap-3 hover:gap-6 shadow-lg transition-all duration-300">
+      <div className="flex justify-center items-center md:gap-4 gap-3">
+        <a
+          href="#"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="text-neutral-300 hover:text-white transition">
+          <Home className="w-5 h-5" />
+        </a>
+
+        <span className="bg-neutral-500 h-5 w-[1px]"></span>
+
+        <a
+          href="https://github.com/w-rahul"
+          target="_blank"
+          className="text-neutral-300 hover:text-white transition">
+          <RiGithubFill className="text-xl" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/rahul-gupta-b9a003259/"
+          target="_blank"
+          className="text-neutral-300 hover:text-white transition">
+          <RiLinkedinBoxFill className="text-xl" />
+        </a>
+
+        <a
+          href="https://x.com/rxhxul"
+          target="_blank"
+          className="text-neutral-300 hover:text-white transition">
+          <RiTwitterXFill className="text-xl" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/rxhulxg/"
+          target="_blank"
+          className="text-neutral-300 hover:text-white transition">
+          <RiInstagramLine className="text-xl" />
+        </a>
+      </div>
+    </div>
   );
 };
