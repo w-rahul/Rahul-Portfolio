@@ -26,19 +26,15 @@ import ShinyText from "./ShinyText";
 export const Projects = () => {
   return (
     <>
-      <section id="projects" className=" dark:text-white">
-          
-    <div
-        className="bg-neutral-800 shadow-2xl w-60 md:w-64 mx-auto rounded-xl mb-14 md:mb-20"
-      >
-     <div
-          className={`bg-clip-text text-transparent text-5xl md:text-5xl font-extrabold py-2 md:py-4 text-center  text-black`}
-          style={{ fontFamily: "Poppins" }}
-        >
-          <ShinyText text="Projects" disabled={false} speed={2} />
+      <section id="projects" className="dark:text-white p-1 md:p-8">
+        <div className="bg-neutral-800 shadow-2xl w-60 md:w-64 mx-auto rounded-xl mb-14 md:mb-20">
+          <div
+            className={`bg-clip-text text-transparent text-5xl md:text-5xl font-extrabold py-2 md:py-4 text-center  text-black`}
+            style={{ fontFamily: "Poppins" }}>
+            <ShinyText text="Projects" disabled={false} speed={2} />
+          </div>
         </div>
-      </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-10 container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-10 container mx-auto px-4 md:px-8 py-8 md:py-12">
           {ProjectsData.map((project) => (
             <SingleProject {...project} key={project.name} />
           ))}
