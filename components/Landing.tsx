@@ -45,9 +45,9 @@ export const Landing = () => {
           </a>
           <button
             onClick={() => window.open("https://cal.com/rxhxul")}
-            className="mt-16 flex justify-center items-center px-4 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-800 transition-colors duration-300">
+            className="mt-16 flex justify-center items-center px-4 py-2.5 bg-neutral-800 text-white rounded-lg hover:bg-neutral-800 transition-colors duration-300">
             <p
-              className="text-lg text-neutral-300 font-medium"
+              className="text-md text-neutral-300 font-medium"
               style={{ fontFamily: "Poppins" }}>
               Book a meet
             </p>
