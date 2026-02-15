@@ -42,12 +42,12 @@ const experiences = [
       "CI/CD",
     ],
     responsibilities: [
-      "Built from scratch & deployed end-to-end: Architected SureParser, an AI-powered PDF parsing platform with intelligent schema generation, multi-class document classification, and automated data extraction; owned complete CI/CD pipeline, configured auto-scaling infrastructure, and established monitoring for production stability",
+      "Built from scratch & deployed end-to-end: Architected SureParser, an AI-powered PDF parsing platform with intelligent schema generation, multi-class document classification, and automated data extraction owned complete CI/CD pipeline, configured auto-scaling infrastructure, and established monitoring for production stability",
       "RAG implementation: Developed production-grade Retrieval-Augmented Generation system for conversational PDF interactions, enabling global semantic search across document repositories with fast response times and high relevancy",
-      "eSign platform expansion: Extended digital signature capabilities with PFX certificate-based signing support ensuring compliance with industry standards; created comprehensive PDF utility API suite (merge, split, page manipulation, compression) handling significant daily traffic",
-      "API development & integration: Engineered scalable microservice wrappers for third-party verification services (Credit Reports, Land Records, Identity Verification); implemented resilient patterns including circuit breakers, exponential backoff, and retry logic for high availability",
+      "eSign platform expansion: Extended digital signature capabilities with PFX certificate-based signing support ensuring compliance with industry standards created comprehensive PDF utility API suite (merge, split, page manipulation, compression) handling significant daily traffic",
+      "API development & integration: Engineered scalable microservice wrappers for third-party verification services (Credit Reports, Land Records, Identity Verification) implemented resilient patterns including circuit breakers, exponential backoff, and retry logic for high availability",
       "AI-augmented productivity: Leveraged LLM-assisted development (GitHub Copilot, GPT-4) for rapid prototyping and boilerplate generation while maintaining production code quality through systematic code review, refactoring, and performance optimization",
-      "System maintenance & reliability: Maintained SureReach lead intelligence platform with zero critical incidents; delivered high-impact features including email notification system with templating engine, intelligent fallback mechanisms, and monitoring dashboards for faster incident resolution",
+      "System maintenance & reliability: Maintained SureReach lead intelligence platform with zero critical incidents delivered high-impact features including email notification system with templating engine, intelligent fallback mechanisms, and monitoring dashboards for faster incident resolution",
     ],
   },
 ];
