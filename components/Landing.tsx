@@ -32,7 +32,7 @@ export const Landing = () => {
         </motion.h2>
         <div className="flex justify-between items-center gap-6 md:gap-8">
           <a
-            href="/rahul-gupta-resume.docx"
+            href="/rahul-resume.pdf"
             download
             className="mt-16 flex justify-center items-center px-4 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-800 transition-colors duration-300">
             <p
