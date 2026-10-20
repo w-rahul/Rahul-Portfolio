@@ -685,13 +685,6 @@ header .col {
   font-size: 12px;
   color: rgb(var(--fg) / 0.62);
   pointer-events: none;
-  animation: drag-me 1.6s ease-in-out infinite;
-}
-/* only opacity moves, so the small text stays sharp under the page zoom */
-@keyframes drag-me {
-  50% {
-    opacity: 0.35;
-  }
 }
 
 /* mini games */
