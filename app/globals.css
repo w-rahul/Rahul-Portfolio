@@ -88,10 +88,10 @@ header .col {
 .sl-bottom::after {
   bottom: 0;
 }
-/* desktop reads a touch smaller: the whole page renders at 88%, phones and tablets keep full size */
+/* desktop reads smaller: the whole page renders at 83%, phones and tablets keep full size */
 @media (min-width: 1024px) {
   :root {
-    --page-zoom: 0.88;
+    --page-zoom: 0.83;
   }
   #shake-root {
     zoom: var(--page-zoom);
@@ -1510,11 +1510,12 @@ html.time-stop #shake-root * {
   }
 }
 
-/* section titles: a strict mincho, upright, no flourish */
+/* section titles: a strict mincho in wide spaced capitals, like a samurai film title card */
 .sec-title {
   font-family: var(--font-jp), "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 /* reveal: a soft fade up, only when js runs */
