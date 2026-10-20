@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>.s{stroke:#161616}.f{fill:#161616}@media (prefers-color-scheme:dark){.s{stroke:#e6e6e6}.f{fill:#e6e6e6}}</style>
+<g class="s" fill="none" stroke-width="2.6" stroke-linecap="round"><line x1="36.00" y1="32.00" x2="55.00" y2="32.00"/><line x1="34.83" y1="34.83" x2="48.26" y2="48.26"/><line x1="32.00" y1="36.00" x2="32.00" y2="55.00"/><line x1="29.17" y1="34.83" x2="15.74" y2="48.26"/><line x1="28.00" y1="32.00" x2="9.00" y2="32.00"/><line x1="29.17" y1="29.17" x2="15.74" y2="15.74"/><line x1="32.00" y1="28.00" x2="32.00" y2="9.00"/><line x1="34.83" y1="29.17" x2="48.26" y2="15.74"/><circle cx="32" cy="32" r="18.2"/><circle cx="32" cy="32" r="10.2" stroke-width="2"/></g>
+<g class="f"><circle cx="56.60" cy="32.00" r="3"/><circle cx="49.39" cy="49.39" r="3"/><circle cx="32.00" cy="56.60" r="3"/><circle cx="14.61" cy="49.39" r="3"/><circle cx="7.40" cy="32.00" r="3"/><circle cx="14.61" cy="14.61" r="3"/><circle cx="32.00" cy="7.40" r="3"/><circle cx="49.39" cy="14.61" r="3"/><circle cx="32" cy="32" r="4.6"/></g>
+</svg>
