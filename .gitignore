@@ -35,7 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local-only voice clips for the anime power-up
-/public/voices/
-# local-only music for the jukebox
-/public/music/
+# the mahoraga clip is unused since mahoraga moved into the header
+/public/voices/mahoraga.mp3
