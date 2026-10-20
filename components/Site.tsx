@@ -5,6 +5,7 @@ import { Badminton } from "./Badminton";
 import { Counter, RoleCycler, Year } from "./Bits";
 import { Icon } from "./Icons";
 import { Jp } from "./Jp";
+import { Stretchy } from "./Stretchy";
 import { MahoragaBanner } from "./MahoragaBanner";
 import { BambooCut, Deadlift, PowerUp, ThunderbirdRide } from "./MiniGames";
 import { Clock, CrtToggle, Header, PaletteHint } from "./Shell";
@@ -29,7 +30,7 @@ function Section({
   return (
     <section id={id} data-spy className="sl-top relative" style={{ "--tone": `var(--${tone})` } as React.CSSProperties}>
       <div className="sl-bottom relative flex items-baseline justify-between px-5 py-4 sm:px-6">
-        <h2 className="sec-label font-serif text-[32px] italic leading-none text-fg">{title}</h2>
+        <h2 className="sec-label sec-title text-[30px] leading-none text-fg">{title}</h2>
         <Jp en={s.en} className="sec-jp text-[16px]">
           {s.jp}
         </Jp>
@@ -97,7 +98,7 @@ export function Site() {
             </p>
             <p data-reveal className="info mt-5 text-[14px] text-muted">
               <Icon name="pin" />
-              Delhi, India · <Clock /> IST · open to remote
+              Delhi, India · <Clock /> IST
             </p>
             <div data-reveal className="mt-6 flex flex-wrap gap-2">
               <a href={profile.cal} {...ext} className="btn btn-primary">
@@ -130,7 +131,7 @@ export function Site() {
         <Section id="work" title="Work" tone="accent">
           <div className="flex gap-4">
             <div className="logo" aria-hidden>
-              S
+              <Image src="/logos/surepass.png" alt="" width={40} height={40} />
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
@@ -186,6 +187,8 @@ export function Site() {
         </Section>
 
         <Section id="stack" title="Stack" tone="ai">
+          <p className="label mb-4 text-dim">grab any skill and pull it. it snaps back</p>
+          <Stretchy>
           <div className="space-y-4">
             {stack.map((g) => (
               <div key={g.group} className="grid gap-2 sm:grid-cols-[100px_1fr] sm:items-start">
@@ -201,6 +204,7 @@ export function Site() {
               </div>
             ))}
           </div>
+          </Stretchy>
         </Section>
 
         <Section id="play" title="Off the clock" tone="matcha">
@@ -268,6 +272,16 @@ export function Site() {
             ))}
           </ul>
         </Section>
+
+        <div className="sl-top relative flex items-baseline gap-3 px-5 py-5 sm:px-6">
+          <Jp en="made by hand" className="flex-none text-[15px] text-accent">
+            自作
+          </Jp>
+          <p className="text-[13px] leading-relaxed text-muted">
+            I designed and built this whole thing from scratch, from the ASCII Mahoraga to the Thunderbird&apos;s exhaust note. No
+            templates, no UI kit.
+          </p>
+        </div>
 
         <footer className="sl-top relative flex flex-wrap items-center justify-between gap-3 px-5 py-5 sm:px-6">
           <p className="label text-dim">
