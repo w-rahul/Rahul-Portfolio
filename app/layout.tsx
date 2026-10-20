@@ -23,6 +23,8 @@ const jp = localFont({ src: "./fonts/ShipporiMincho-jp.woff2", variable: "--font
 const jpHeavy = localFont({ src: "./fonts/DelaGothicOne-jp.woff2", variable: "--font-jp-heavy", display: "swap" });
 // comic lettering for the english lines in the anime moments
 const bang = localFont({ src: "./fonts/Bangers-latin.woff2", variable: "--font-bang", display: "swap" });
+// rough, chiseled capitals for the section titles
+const rough = localFont({ src: "./fonts/ReggaeOne-latin.woff2", variable: "--font-rough", display: "swap" });
 
 const title = "Rahul ラフル · Backend Engineer";
 const description = "backend engineer from delhi. sde-2 at surepass. all in, at work and off the clock.";
@@ -47,7 +49,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html
       lang="en"
-      className={`${sans.variable} ${mono.variable} ${serif.variable} ${jp.variable} ${jpHeavy.variable} ${bang.variable}`}
+      className={`${sans.variable} ${mono.variable} ${serif.variable} ${jp.variable} ${jpHeavy.variable} ${bang.variable} ${rough.variable}`}
       data-clips={clips.join(" ")}
       suppressHydrationWarning
     >
