@@ -210,8 +210,9 @@ export function MahoragaBanner() {
 
     const onMove = (e: PointerEvent) => {
       const r = canvas.getBoundingClientRect();
-      mouse.x = e.clientX - r.left;
-      mouse.y = e.clientY - r.top;
+      // against the on-screen size, so page zoom can't throw it off
+      mouse.x = ((e.clientX - r.left) / r.width) * W;
+      mouse.y = ((e.clientY - r.top) / r.height) * H;
     };
     const onLeave = () => {
       mouse.x = -999;

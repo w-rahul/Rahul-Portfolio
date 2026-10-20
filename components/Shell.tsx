@@ -316,9 +316,17 @@ export function Motion() {
     };
     window.addEventListener("keydown", onKey);
 
+    // the tab calls you back in japanese, and says welcome back when you return
     const title = document.title;
+    let back = 0;
     const onVisibility = () => {
-      document.title = document.hidden ? "やれやれだぜ · come back" : title;
+      clearTimeout(back);
+      if (document.hidden) {
+        document.title = "戻ってきて · come back";
+        return;
+      }
+      document.title = "おかえり · welcome back";
+      back = window.setTimeout(() => (document.title = title), 1600);
     };
     document.addEventListener("visibilitychange", onVisibility);
 
@@ -339,6 +347,7 @@ export function Motion() {
       spy.disconnect();
       window.removeEventListener("keydown", onKey);
       document.removeEventListener("visibilitychange", onVisibility);
+      clearTimeout(back);
       document.title = title;
     };
   }, []);

@@ -300,7 +300,11 @@ export function Badminton() {
       canvas.height = Math.round(LH * scale * dpr);
       render();
     };
-    const toLogical = (e: PointerEvent) => (e.clientX - canvas.getBoundingClientRect().left) / scale;
+    // measured against the canvas's on-screen width, so page zoom can't throw it off
+    const toLogical = (e: PointerEvent) => {
+      const r = canvas.getBoundingClientRect();
+      return ((e.clientX - r.left) / r.width) * (canvas.clientWidth / scale);
+    };
     const onMove = (e: PointerEvent) => {
       st.you.target = Math.min(NX - 22, Math.max(14, toLogical(e) - 12));
     };
