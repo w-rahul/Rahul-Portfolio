@@ -187,10 +187,9 @@ export function Site() {
         </Section>
 
         <Section id="stack" title="Stack" tone="ai">
-          <p className="label mb-4 text-dim">grab any skill and pull it. it snaps back</p>
           <Stretchy>
           <div className="space-y-4">
-            {stack.map((g) => (
+            {stack.map((g, gi) => (
               <div key={g.group} className="grid gap-2 sm:grid-cols-[100px_1fr] sm:items-start">
                 <p className="label pt-1.5 text-dim">{g.group}</p>
                 <ul className="flex flex-wrap gap-1.5">
@@ -200,6 +199,11 @@ export function Site() {
                       {item}
                     </li>
                   ))}
+                  {gi === 0 && (
+                    <li className="drag-me" aria-hidden>
+                      ← drag me
+                    </li>
+                  )}
                 </ul>
               </div>
             ))}

@@ -676,6 +676,24 @@ header .col {
   transform: translateY(-1px);
 }
 
+/* a small nudge pointing back at the chips */
+.drag-me {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 6px;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  color: rgb(var(--fg) / 0.45);
+  rotate: -4deg;
+  pointer-events: none;
+  animation: drag-me 1.6s ease-in-out infinite;
+}
+@keyframes drag-me {
+  50% {
+    translate: -4px 0;
+  }
+}
+
 /* mini games */
 .game {
   position: relative;
