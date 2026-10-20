@@ -192,7 +192,9 @@ export function GutterAscii() {
       canvas.height = H;
       cols = Math.ceil(W / cw);
       rows = Math.ceil(H / ch);
-      gutter = Math.max(0, (vw - COLUMN) / 2) * dpr;
+      // the column's real on-screen width, which page zoom changes
+      const column = document.querySelector("main.col")?.getBoundingClientRect().width ?? COLUMN;
+      gutter = Math.max(0, (vw - column) / 2) * dpr;
       gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(gl.TEXTURE_2D, fieldTex);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, cols, rows, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
