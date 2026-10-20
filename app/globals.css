@@ -75,7 +75,8 @@ header .col {
   content: "";
   position: absolute;
   left: 50%;
-  width: 100vw;
+  /* zoom shrinks vw too, so the lines grow back by the same factor to reach both edges */
+  width: calc(100vw / var(--page-zoom, 1));
   height: 1px;
   transform: translateX(-50%);
   background: rgb(var(--fg) / 0.08);
@@ -86,6 +87,16 @@ header .col {
 }
 .sl-bottom::after {
   bottom: 0;
+}
+/* desktop reads a touch smaller: the whole page renders at 88%, phones and tablets keep full size */
+@media (min-width: 1024px) {
+  :root {
+    --page-zoom: 0.88;
+  }
+  #shake-root {
+    zoom: var(--page-zoom);
+    overflow-x: clip;
+  }
 }
 
 /* type (zero specificity so tailwind color utilities win) */
