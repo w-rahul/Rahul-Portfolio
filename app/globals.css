@@ -681,16 +681,16 @@ header .col {
   display: inline-flex;
   align-items: center;
   padding-left: 6px;
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-sans), sans-serif;
   font-size: 12px;
   color: rgb(var(--fg) / 0.62);
-  rotate: -4deg;
   pointer-events: none;
   animation: drag-me 1.6s ease-in-out infinite;
 }
+/* only opacity moves, so the small text stays sharp under the page zoom */
 @keyframes drag-me {
   50% {
-    translate: -4px 0;
+    opacity: 0.35;
   }
 }
 
@@ -1528,11 +1528,11 @@ html.time-stop #shake-root * {
   }
 }
 
-/* section titles: a strict mincho in wide spaced capitals, like a samurai film title card */
+/* section titles: rough, chiseled capitals, like letters cut into wood */
 .sec-title {
-  font-family: var(--font-jp), "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+  font-family: var(--font-rough), var(--font-jp), serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
