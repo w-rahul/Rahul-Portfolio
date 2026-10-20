@@ -2,7 +2,7 @@ import Image from "next/image";
 import { localClips } from "@/lib/media";
 import { connect, hobbies, principles, profile, receipts, rightNow, roles, sections, stack, work } from "@/content/profile";
 import { Badminton } from "./Badminton";
-import { Counter, RoleCycler } from "./Bits";
+import { Counter, RoleCycler, Year } from "./Bits";
 import { Icon } from "./Icons";
 import { Jp } from "./Jp";
 import { MahoragaBanner } from "./MahoragaBanner";
@@ -271,7 +271,7 @@ export function Site() {
 
         <footer className="sl-top relative flex flex-wrap items-center justify-between gap-3 px-5 py-5 sm:px-6">
           <p className="label text-dim">
-            © {new Date().getFullYear()} Rahul{" "}
+            © <Year built={new Date().getFullYear()} /> Rahul{" "}
             <Jp en="rahul" className="normal-case">
               ラフル
             </Jp>

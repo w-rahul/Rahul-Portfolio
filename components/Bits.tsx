@@ -83,3 +83,10 @@ export function Counter({ to, prefix = "", suffix = "" }: { to: number; prefix?:
     </span>
   );
 }
+
+// the footer year: fixed at build, corrected in the browser, so the page can stay fully static
+export function Year({ built }: { built: number }) {
+  const [year, setYear] = useState(built);
+  useEffect(() => setYear(new Date().getFullYear()), []);
+  return <>{year}</>;
+}
