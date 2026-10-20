@@ -30,7 +30,7 @@ function Section({
   return (
     <section id={id} data-spy className="sl-top relative" style={{ "--tone": `var(--${tone})` } as React.CSSProperties}>
       <div className="sl-bottom relative flex items-baseline justify-between px-5 py-4 sm:px-6">
-        <h2 className="sec-label sec-title text-[30px] leading-none text-fg">{title}</h2>
+        <h2 className="sec-label sec-title text-[20px] leading-none text-fg">{title}</h2>
         <Jp en={s.en} className="sec-jp text-[16px]">
           {s.jp}
         </Jp>
@@ -274,12 +274,12 @@ export function Site() {
         </Section>
 
         <div className="sl-top relative flex items-baseline gap-3 px-5 py-5 sm:px-6">
-          <Jp en="made by hand" className="flex-none text-[15px] text-accent">
-            自作
+          <Jp en="born with it" className="flex-none text-[15px] text-accent">
+            天性
           </Jp>
           <p className="text-[13px] leading-relaxed text-muted">
-            I designed and built this whole thing from scratch, from the ASCII Mahoraga to the Thunderbird&apos;s exhaust note. No
-            templates, no UI kit.
+            Born creative, went backend on purpose. I designed every pixel here myself, from the ASCII Mahoraga to the
+            Thunderbird&apos;s exhaust note. My agents helped me ship it fast. The taste is all mine.
           </p>
         </div>
 
