@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local-only voice clips for the anime power-up
+/public/voices/
+# local-only music for the jukebox
+/public/music/
