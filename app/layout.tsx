@@ -24,7 +24,7 @@ const jpHeavy = localFont({ src: "./fonts/DelaGothicOne-jp.woff2", variable: "--
 // comic lettering for the english lines in the anime moments
 const bang = localFont({ src: "./fonts/Bangers-latin.woff2", variable: "--font-bang", display: "swap" });
 
-const title = "Rahul · Backend Engineer";
+const title = "Rahul ラフル · Backend Engineer";
 const description = "backend engineer from delhi. sde-2 at surepass. all in, at work and off the clock.";
 
 export const metadata: Metadata = {
