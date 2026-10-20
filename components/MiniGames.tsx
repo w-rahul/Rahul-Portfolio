@@ -319,7 +319,8 @@ export function BambooCut() {
 
     const toLogical = (e: PointerEvent) => {
       const r = canvas.getBoundingClientRect();
-      return { x: (e.clientX - r.left) / scale, y: (e.clientY - r.top) / scale, t: performance.now() };
+      // against the on-screen size, so page zoom can't throw it off
+      return { x: ((e.clientX - r.left) / r.width) * LW, y: ((e.clientY - r.top) / r.height) * LH, t: performance.now() };
     };
     const onMove = (e: PointerEvent) => {
       const p = toLogical(e);
