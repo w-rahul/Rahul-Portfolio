@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import { CommandPalette, Motion } from "@/components/Shell";
 import { AsciiCursor } from "@/components/AsciiCursor";
 import { GutterAscii } from "@/components/GutterAscii";
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {songs.length > 0 && <Jukebox songs={songs} />}
         <div className="crt-fx" aria-hidden />
         <div className="grain" aria-hidden />
+        <Analytics />
       </body>
     </html>
   );
