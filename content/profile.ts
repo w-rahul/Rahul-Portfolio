@@ -43,7 +43,7 @@ export const connect = [
 export const roles = [
   {
     title: "SDE-2",
-    when: "Jan 2026 → now",
+    when: "Oct 2024 → now",
     line: "I own the LLM document platform end to end, plus the workflow engine and billing. Leading a junior frontend dev.",
   },
   {
